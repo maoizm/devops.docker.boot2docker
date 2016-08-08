@@ -1,5 +1,11 @@
 # devops-docker
 
+## Preface
+
+As not all Windows computers are capable of running Hyper-V supervisor and thus cannot run native Docker engine it is required to have 2 layers of proper configuration of shared folders between the Host and docker containers.
+
+Virtualbox shared folders under Windows is [PITA](http://www.urbandictionary.com/define.php?term=pita) even without additional Docker hassle. This repository hopefully will be of use for configuring sharing folders between Windows host and docker containers.
+
 ## System requirements
 
 Windows 10; Docker Toolbox; Virtualbox 5.1.2  
