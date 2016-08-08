@@ -2,7 +2,7 @@
 
 ## System requirements
 
-Windows 10; Docker Toolbox; Virtualbox 5.1.2
+Windows 10; Docker Toolbox; Virtualbox 5.1.2  
 babun (or Git Bash / Cygwin / MSYS) as a shell
 
 ## Installation
