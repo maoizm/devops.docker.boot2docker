@@ -1,1 +1,2 @@
-VBoxManage sharedfolder add default --name "hostdev" --hostpath "\\?\c:\0projects" --automount
+#!/bin/sh
+VBoxManage sharedfolder add default --automount --name $1 --hostpath \\\\?\\c:\\0projects 

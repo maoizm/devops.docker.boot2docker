@@ -8,4 +8,9 @@
 #   and https://github.com/boot2docker/boot2docker/blob/master/README.md#virtualbox-guest-additions
 #
 #
-sudo echo -e "mkdir -p /c/0projects ; mount -t vboxsf -o uid=1000,gid=50 hostdev /c/0projects" >> /var/lib/boot2docker/bootlocal.sh
+if [ ! -f /var/lib/boot2docker/bootlocal.sh ] ;
+then
+	touch /var/lib/boot2docker/bootlocal.sh
+fi
+#sudo echo -e "mkdir -p /c/0projects ; mount -t vboxsf -o uid=1000,gid=50 hostdev /c/0projects" >> /var/lib/boot2docker/bootlocal.sh
+sudo echo -e "mkdir -p ${1} ; mount -t vboxsf -o uid=1000,gid=50 ${2} ${1}" >> /var/lib/boot2docker/bootlocal.sh
